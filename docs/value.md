@@ -135,11 +135,52 @@ var name1 = 'Alan';
 var name2 = "Bob";
 var name3 = `Jack`;
 ```
-以上三种方式都可以定义字符串。其中方式1与2类似。方式3为模板字符串。
 
 ### 拼接
 
-因为方式1与2类似，所以只讨论1与3的区别。
+因为方式1 单引号与方式2 双引号类似：
+
+```javascript
+var name = 'Alan';
+var age = 22;
+
+var intro = 'Hi, my name is ' + name + ', I\'m ' + age + ' years old.';
+console.log(intro);
+```
+输出：
+```
+Hi, my name is Alan, I'm 22 years old.
+```
+字符串与变量使用加号拼接，其中数字在于字符串相加的时候转换成了字符串的 22。
+
+而是用反引号则可以写成：
+```javascript
+var name = 'Alan';
+var age = 22;
+
+var intro = `Hi, My name is ${name}, I'm ${age} years old.`;
+console.log(intro);
+```
+${} 中的变量（或者表达式）的结果会被转成字符串拼接在其中。当然反引号的字符串也可以使用加号拼接，并且可以在其中进行计算：
+```javascript
+var name = 'Alan';
+var age = 22;
+
+var intro = `Hi, my name is ` + name +  `, I'm ${age + 3} years old.`;
+console.log(intro);
+```
+
+使用引号和反引号出了以上，还有一个区别是
+```javascript
+// 引号中书写字符串书写多行需要转义
+var str = 'hello \
+world';
+
+// 反引号中不需要
+var str = `hello 
+world`;
+```
+
 
 Javascript 使用 UTF8-16 的字符编码
 
@@ -154,4 +195,5 @@ Javascript 使用 UTF8-16 的字符编码
 
 
 
-
+# 索引
+上一讲 [第一讲 hello world](https://github.com/Lellansin/node-tutorial-4/blob/master/docs/hello.md)
