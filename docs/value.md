@@ -153,7 +153,7 @@ Hi, my name is Alan, I'm 22 years old.
 ```
 字符串与变量使用加号拼接，其中数字在于字符串相加的时候转换成了字符串的 22。
 
-而是用反引号则可以写成：
+而使用反引号（模板字符串）则可以写成：
 ```javascript
 var name = 'Alan';
 var age = 22;
@@ -170,17 +170,20 @@ var intro = `Hi, my name is ` + name +  `, I'm ${age + 3} years old.`;
 console.log(intro);
 ```
 
-使用引号和反引号出了以上，还有一个区别是
+使用引号和反引号除了以上，还有一个区别是
 ```javascript
 // 引号中书写字符串书写多行需要转义
 var str = 'hello \
 world';
 
+// 或者拼接
+var str = 'hello ' +
+          'world';
+
 // 反引号中不需要
 var str = `hello 
 world`;
 ```
-
 
 Javascript 使用 UTF8-16 的字符编码
 
