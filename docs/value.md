@@ -1,4 +1,4 @@
-# 第二讲 数值
+# 第二节 数值
 
 在 Javascript 中有 6 中基本类型的值：number、string、boolean、object、function 和 undefined。
 
@@ -138,7 +138,7 @@ var name3 = `Jack`;
 
 ### 拼接
 
-因为方式1 单引号与方式2 双引号类似：
+方式1 单引号与方式2 双引号类似：
 
 ```javascript
 var name = 'Alan';
@@ -185,18 +185,13 @@ var str = `hello
 world`;
 ```
 
+## 数字与字符串
+
+### 数字与字符串转换
+
 Javascript 使用 UTF8-16 的字符编码
 
 
-
-
-
-
-
-
-
-
-
-
 # 索引
-上一讲 [第一讲 hello world](https://github.com/Lellansin/node-tutorial-4/blob/master/docs/hello.md)
+上一节 [第一节 hello world](https://github.com/Lellansin/node-tutorial-4/blob/master/docs/hello.md)
+下一节 [第三节 语句](https://github.com/Lellansin/node-tutorial-4/blob/master/docs/statements.md)

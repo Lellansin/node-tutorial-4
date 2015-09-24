@@ -1,4 +1,4 @@
-# 第一讲 hello world
+# 第一节 hello world
 
 ## 环境配置
 
@@ -48,4 +48,4 @@ node hi.js
 看到输出的 `hello world` 即为成功。
 
 
-下一讲 [第二讲 数值](https://github.com/Lellansin/node-tutorial-4/blob/master/docs/value.md)
+下一节 [第二节 数值](https://github.com/Lellansin/node-tutorial-4/blob/master/docs/value.md)

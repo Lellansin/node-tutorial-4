@@ -1,4 +1,4 @@
-# 语句
+# 第三节 语句
 
 本节无ES6新内容， 熟悉的可以跳过。
 
@@ -207,3 +207,6 @@ for (i = 0; i < 5; i++) {
 1
 2
 ```
+
+
+上一节 [第二节 数值](https://github.com/Lellansin/node-tutorial-4/blob/master/docs/value.md)
